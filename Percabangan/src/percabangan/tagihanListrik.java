@@ -30,13 +30,17 @@ public class tagihanListrik {
       }
       //proses menghitung total tagihan sebelum diskon
    totalAwal = pemakaianListrik*tarif;
+    //Proses Menentukan Apakah Pelanggan Mendapatkan Diskon
     if(totalAwal>500000){
       diskon = 0.05;
     }else{
      diskon = 0;
     }
+    //Proses Menghitung Jumlah Diskon
     jumlahDiskon = totalAwal*diskon;
+    //Proses Menghitung Total Bayar
     totalAkhir = totalAwal - (totalAwal*diskon);
+    //Output
         System.out.println("Jumlah Pemakaian Listrik per kWh anda adalah : "+pemakaianListrik+" kWh");
         System.out.println("Jumlah Tarif per kWh adalah : "+"Rp."+tarif);
         System.out.println("Jumlah Total Tagihan anda adalah : "+"Rp."+totalAwal);

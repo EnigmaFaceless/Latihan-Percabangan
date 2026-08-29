@@ -21,7 +21,9 @@ public class bmiCalculator {
         tb = in.nextDouble();
         //Menghitung nilai BMI
         bmi = bb/(tb*tb);
-        //Mennetukan Status BMI
+        //Output
+        System.out.println("Nilai BMI anda adalah : "+bmi);
+             //Mennetukan Status BMI
         if (bmi <18.5){
             System.out.println("Status BMI anda adalah Kurus");
         }else if (bmi >=18.5 && bmi <25){
@@ -31,7 +33,5 @@ public class bmiCalculator {
         }else{
         System.out.println("Status BMI anda adalah Obesitas"); 
         }
-        //Output
-        System.out.println("Nilai BMI anda adalah : "+bmi);
 }   
     }
